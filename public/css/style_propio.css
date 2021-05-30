@@ -1,0 +1,364 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+*{
+	margin:0;
+	padding: 0;
+}
+.wrapper{
+	float: left;
+	width: 100%;
+	height:auto;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilo para las estrellas en la clasificacion*/
+label #estrella{ 
+	color:grey;
+}
+
+input[type = "radio"]{ display:none;}
+
+.clasificacion{
+	direction: rtl;/* right to left */
+	unicode-bidi: bidi-override;/* bidi de bidireccional */
+	font-size: 40px;
+	float: left;
+}
+
+label #estrellas:hover{color:orange;}
+
+input[type = "radio"]:checked ~ label{color:orange;}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilo locales mas destacados index*/
+#titleApp{
+	font-size: 200%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#logo{
+	margin-top: 20%;
+}
+.row{
+	width: auto;
+}
+.iconoPuntuacion{
+	width: 8%;
+}
+.img-responsive{
+	height: 250px;
+	width: 100%;
+}
+.member{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	height: 100%;
+	min-height:480px;
+	padding: 5%;
+	text-align: center;
+}
+.col-md-3{
+	min-height:450px;
+	margin-bottom: 1%;
+}
+#logo{
+	height: 50px;
+}
+.categorias{
+	min-height: 50px;
+	margin-bottom: 2%;
+}
+.precio{
+	min-height: 50px;
+	margin-bottom: 2%;
+}
+#datDevel{
+	margin-top: 2%;
+	padding-top: 1%;
+	border-top: solid;
+	width: auto;
+	border-top-width: 1px;
+}
+#pg{
+	font-size: 200%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.itemMax{
+	font-size: 200%;
+	margin-left: 0.2%;
+	margin-right: 0.2%;
+	padding-left: 0.8%;
+	padding-right: 0.8%;
+	border-radius: 15px;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Efecto lupa hover locales destacados index*/
+
+.loc_destacados {
+	-webkit-transition:all .5s ease; /* Safari y Chrome */
+	-moz-transition:all .5s ease; /* Firefox */
+	-o-transition:all .5s ease; /* IE 9 */
+	-ms-transition:all .5s ease; /* Opera */
+	}
+	.loc_destacados:hover {
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	transform:scale(1.1);
+	}
+	.loc_destacados {
+	overflow:hidden;
+	}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos de local (individual)*/
+#content{
+	height: auto;
+	float: left;
+	margin-left: 10%;
+	width: 80%;
+}
+#titulo{
+}
+#imagen{
+	float: left;
+	width: 100%;
+	height: auto;
+
+}
+#imagen img{
+	width: 100%;
+	height: 500px;
+	filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+#content #datos{
+	margin-top: 2.5%;
+	float: left;
+	width: 100%;
+	display: block;
+	height:100%;
+	margin-bottom: 5%;
+}
+ #contacto{
+	float: left;
+	width: 33.3%;
+	display: inline-block;
+ }
+#content #datos .informacion{
+	float: left;
+	width: 33.3%;
+	padding-left: 1%;
+	display: inline-block;
+	height: 350px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#content #datos .informacion_central{
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 1%;
+	width: 30.3%;
+	display: inline-block;
+	height: 350px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+#content #datos .informacion .cont_info{
+	margin: 5%;
+}
+#content #datos .informacion .cont_info img{
+	width: 25px;
+	margin-left: 2%;
+}
+#content #datos .informacion img{
+	width: 25px;
+	margin-left: 2%;
+}
+#content #datos .informacion_central .cont_info{
+	margin-left: 5%;
+}
+#content #datos .informacion .cont_info .item_puntuacion{
+	margin: 5%;
+}
+#bot_op{
+	border-radius: 10px;
+	width: 50%;
+	margin-top: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	background-color: #333333;
+	width: auto;
+}
+#opiniones{
+	margin-left: 10%;
+	width: 80%;
+}
+#opiniones  .opinion .puntuacion_op .ico_puntuacion{
+	font-size: 200%;
+	width: auto;
+}
+.opinion{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	min-height: 300px;
+	padding: 1%;
+	margin-bottom: 2%;
+}
+.titulo_op{
+	margin-bottom:2%;
+	border-bottom: solid;
+	border-bottom-width: 1px;
+}
+.puntuacion_op{
+	margin-bottom:2%;
+	border-bottom: solid;
+	padding-bottom: 1%;
+	border-bottom-width: 1px;
+}
+.informacion .ico_puntuacion{
+	font-size: 200%;
+	width: auto;
+	margin-left: 2%;
+}
+#opiniones #notOpinion{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	min-height: 300px;
+	padding: 1%;
+	margin-bottom: 2%;
+}
+.itemPaginado{
+	border-radius: 10px;
+	margin-top: 5%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-align: center;
+	background-color: #333333;
+}
+.Us{
+	float: right;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*Estilos para las opiniones*/
+#content_op{
+	height: auto;
+	margin-top: 2.5%;
+	width: 60%;
+	margin-left: 20%;
+}
+#datos_op{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	float: left;
+	width: 100%;
+	margin-bottom: 2%;	
+	height: auto;
+}
+#imagen_op img{
+	width: 40%;
+	float: left;
+	margin-right: 2.5%;
+}
+#form_puntuacion{
+	float: left;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	padding-bottom: 5%;
+	margin-bottom: 5%;
+}
+#op_puntuacion{
+	border-bottom:solid;
+	border-bottom-width: 1px;
+	float: left;
+	width: 100%;
+	padding-left: 2%;
+}
+#cont_titulo_op{
+	border-bottom:solid;
+	border-bottom-width: 1px;
+	float: left;
+	width: 100%;
+	padding-bottom: 2%;
+	margin-bottom: 2%;
+}
+#op_cont_text{
+	float: left;
+	width: 100%;
+	padding-left: 2%;
+}
+#op_cont_text input{
+	width: 70%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 20px;
+}
+#op_cont_text textarea{
+	width: 70%;
+}
+#cont_op_precio{
+	float: left;
+	width: 100%;
+}
+#cont_op_precio #op_precio{
+	width: 40%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+#guardar_opinion{
+	margin-left: 15%;
+	margin-top: 5%;
+	background-color: #333333;
+	color: aliceblue;
+	border-radius: 5px;
+}
+.datLocOpImg img{
+	width: 40%;
+	height: 100%;
+}
+.datLocOpImg{
+	width: 50px;
+	display: inline;
+	width: 50%;
+}
+.datLocOp{
+	float: right;
+	display: inline;
+	width: 50%;
+	margin-right: 5%;
+}
+.itemOpDat{
+	margin-bottom: 1%;
+}
+.opinion .elimOp{
+	border: solid;
+	width: 5%;
+	text-align: center;
+	margin-top: 4%;
+	border-radius: 5px;
+	border-width: 1px;
+}
+/*--------------------------------------------*/
+/*Estilo para error jquery*/
+.error{
+	display: block;
+	color:red;
+	font-weight: 500;
+	font-style: oblique;
+}
+#fail{
+	margin-top: 2%;
+	display: block;
+	color:red;
+	font-weight: 500;
+	font-style: oblique;
+}
+/*--------------------------------------------------------------------------------*/
+/*Estilo para footer*/
+.contact{
+	float:left;
+	width: 100%;
+}
+footer{
+	float: left;
+	width: 100%;
+}
